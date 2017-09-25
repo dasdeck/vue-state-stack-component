@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../node_modules/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="../node_modules/vuex/dist/vuex.min.js"></script>
+    <script type="text/javascript" src="dist/app.js"></script>
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", function (event)
+        {
+            //do work
+            const app = new Vue(App);
+            const storeApp = new Vue(StoreApp);
+
+            app.$mount('#app');
+            storeApp.$mount('#storeApp');
+        });
+
+
+    </script>
+</head>
+<body>
+<div id="app">
+    to be replaced
+</div>
+<div id="storeApp">
+    to be replaced
+</div>
+</body>
+</html>
